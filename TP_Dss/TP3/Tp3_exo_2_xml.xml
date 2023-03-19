@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Tp3_exo_2_xsd.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<!DOCTYPE personne SYSTEM "Tp3_exo_2_dtd.dtd">
+<personne>
+  <nom>djaafar</nom>
+  <prenom>lecheheb</prenom>
+  <dateNaissance>2002-09-19</dateNaissance>
+  <ville>Ourgla</ville>
+  <sexe>homme</sexe>
+  <enfants>
+    <nom_complet>Lecheheb Aziz</nom_complet>
+    <nom_complet>Lecheheb Aymen</nom_complet>
+  </enfants>
+</personne>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="inscriptions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name='ue' maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name='titre' type="xs:string" />
+              <xs:element name='resume' type="xs:string" />
+              <xs:element name='inscrit'  minOccurs="0" maxOccurs="unbounded" >
+                <xs:complexType >
+                  <xs:attribute name='num' type="xs:string" use="required" />
+                  <xs:attribute name='semestre' type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name='code' type="xs:string" use="required"/>
+            <xs:attribute name='niveau' type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name='etudiant' minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nom" type="xs:string" />
+              <xs:element name="adresse" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="num" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    
+  </xs:element>
+</xs:schema>

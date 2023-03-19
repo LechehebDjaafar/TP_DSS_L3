@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE produits SYSTEM "Tp4_exo2_dtd.dtd">
+<?xml-model href="Tp4_exo2_xsd.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<produits>
+    <fruit type="clementine" prix="290" calibre="1">
+        <producteur>Production Bastia</producteur>
+        <origine ragion="Corse">France</origine>
+        <qtity>15</qtity>
+        <note>Sans pepins,avec feuilles</note>
+        <bio/>
+    </fruit>
+    <legume type="courgette" prix="300" calibre="2">
+        <producteur>Madrid Hortelano</producteur>
+        <origine >Espagne</origine>
+        <qtity>100</qtity>
+        <bio/>
+    </legume>
+    <legume type="chou fleur" prix="090" calibre="2">
+        <producteur>Pontivy et Cie</producteur>
+        <origine ragion="Bretagna" >france</origine>
+        <qtity>100</qtity>
+    </legume>
+    <legume type="salade" prix="075" calibre="3">
+        <producteur>Marius Production</producteur>
+        <origine ragion="Provence" >france</origine>
+        <qtity>35</qtity>
+        <note>Batavia</note>
+    </legume>
+    <fruit type="melon" prix="150" calibre="1">
+        <producteur>Marius Production</producteur>
+        <origine ragion="Provence">France</origine>
+        <qtity>50</qtity>
+        <note>Melon Brode</note>
+        <bio/>
+    </fruit>
+</produits>
+
+<!-- 
+    1-les producteurs de fruits
+    -> //fruit/producteur
+    2-les legumes produits en Espagne
+    -> //legume[origine='Espagne']/producteur
+    3-les origines des clementines de calibre 1 issues de l'agriculture biologique
+    -> //fruit[@type="clementine" and @calibre='1']/origine
+    4-les producteurs bretons (Indication : utiliser un axe )??
+    ->
+    
+
+-->

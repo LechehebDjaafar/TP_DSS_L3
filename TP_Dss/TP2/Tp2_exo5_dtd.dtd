@@ -1,0 +1,14 @@
+<!ELEMENT courses (course+)>
+<!ELEMENT course (gagnant,second?,les_arbitres?,debut?,fin?)>
+<!ATTLIST course numero CDATA #REQUIRED>
+<!ELEMENT gagnant (#PCDATA)>
+<!ATTLIST gagnant temps CDATA #IMPLIED>
+<!ELEMENT second (#PCDATA)>
+<!ELEMENT les_arbitres (arbitre1,arbitre2)>
+<!ELEMENT arbitre1 (#PCDATA)>
+<!ATTLIST arbitre1 nom CDATA #REQUIRED>
+<!ELEMENT arbitre2 (#PCDATA)>
+<!ATTLIST arbitre2 nom CDATA #REQUIRED>
+<!ELEMENT debut (#PCDATA)>
+<!ATTLIST debut format_heure CDATA #REQUIRED>
+<!ELEMENT fin (#PCDATA)>

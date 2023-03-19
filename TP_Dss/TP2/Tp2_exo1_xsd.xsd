@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="messages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="message" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="dest"  maxOccurs="unbounded">
+                <xs:complexType mixed="true">
+                  <!-- <xs:sequence><xs:element name = "dest" type="xs:string"/></xs:sequence> -->
+                  <xs:attribute name="bcc" type="xs:string" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="contenu" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="numero" type="xs:integer" use="required"/>
+            <xs:attribute name="date" type="xs:date" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

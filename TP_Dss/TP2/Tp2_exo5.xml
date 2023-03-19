@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE courses SYSTEM "Tp2_exo5_dtd.dtd">
+<courses>
+  <course numero="c8">
+    <gagnant temps="35">Dupont</gagnant>
+    <second>Durand</second>
+    <les_arbitres>
+      <arbitre1 nom='TMartinT'/>
+      <arbitre2 nom='TLegrandT'/>
+    </les_arbitres>
+    <debut format_heure="hh:mm"> 13:00 </debut>
+    <fin> 13:53 </fin>
+  </course>
+  <course numero="c9">
+    <gagnant>
+      Rameau
+    </gagnant>
+  </course>
+</courses>

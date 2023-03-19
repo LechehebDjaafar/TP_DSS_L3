@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="intiro_G3A_xsd.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<!DOCTYPE catalogue SYSTEM "intiro_G3A_dtd.dtd">
+<catalogue>
+    <cinema>
+        <nom>UGC</nom>
+        <adresse>
+            <ville>Rouen</ville>
+            <lieu>Salnt Sever</lieu>
+        </adresse>
+        <seance heure="20h" ref_film="id_GM" />
+    </cinema>
+    <film film_id="id_GM">
+        <titre>La Graine et le mutet</titre>
+        <annee>2007</annee>
+    </film>
+</catalogue>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Tp3_exo_1_xsd.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<!DOCTYPE livre [
+  <!ELEMENT livre (titre,auteur+,(resume|presentation))>
+  <!ATTLIST livre isbn CDATA #REQUIRED>
+  <!ELEMENT titre (#PCDATA)>
+  <!ELEMENT auteur (nom,prenom)>
+  <!ATTLIST auteur idAuteur CDATA #REQUIRED>
+  <!ELEMENT resume (#PCDATA)>
+  <!ELEMENT presentation (#PCDATA)>
+  <!ELEMENT nom (#PCDATA)>
+  <!ELEMENT prenom (#PCDATA)>
+]>
+<livre isbn='29310'>
+  <titre>Harry puter</titre>
+  <auteur  idAuteur="3747294">
+    <nom>Lecheheb</nom>
+    <prenom>Djaafar</prenom>
+  </auteur>
+  <auteur idAuteur="37474">  
+    <nom>Lecheheb</nom>
+    <prenom>Djaafar</prenom>
+  </auteur>
+  <resume>sdsdsd</resume>
+  <!-- <presentation>fdsfd</presentation> -->
+</livre>

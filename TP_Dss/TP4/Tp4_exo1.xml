@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Tp4_exo1_xsd.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<!DOCTYPE liver SYSTEM "Tp4_exo1_dtd.dtd">
+<liver titre="Mon livre" >
+    <auteurs>
+        <auteur nom="nom1" prenom="prenom1" />
+        <auteur nom="nom2" prenom="prenom2"/>
+    </auteurs >
+    <sections >
+        <section titre="section1">
+            <chapitre titre="chapitre1">
+                <paragraphe>Premier paragraphe</paragraphe>
+                <paragraphe>Deuxieme paragraphe</paragraphe>
+
+            </chapitre>
+        </section>
+        <section titre="section2">
+            <chapitre titre="chapitre2">
+                <paragraphe>Premier paragraphe</paragraphe>
+                <paragraphe>Deuxieme paragraphe</paragraphe>
+            </chapitre>
+        </section>
+    </sections>
+</liver>
+
+<!-- 
+    1-Trouver la list de noeuds auteur
+    -> //auteur
+    2-Trouver la list de tous les noeuds section
+    -> //section
+    3-Trouver la list des chapitres de la premiere section
+    -> //section[@titre='section1']/chapitre OR //section[1]/chapitre
+    4-Trouver la list des attributs du premier auteur
+    -> //auteur[@nom='nom1' and @prenom="prenom1"] OR //auteur[1]
+    5-Trouver la valeur de l'attribut nom de deuxieme auteur
+    -> //auteur[@nom='nom2'] 
+    6-Trouver la list des sections avec deux chapitres
+    -> //section[count(chapitre)>=2]
+    7-Trouver la list des paragraphes dont le parent a pour titre Chapitre one
+    -> //chapitre[@titre="chapitre1"]/paragraphe
+-->

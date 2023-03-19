@@ -1,0 +1,11 @@
+<!ELEMENT produits ((fruit|legume)+)>
+<!ELEMENT fruit (producteur,origine,qtity,note,bio)>
+<!ATTLIST fruit type CDATA #REQUIRED prix CDATA #REQUIRED calibre CDATA #REQUIRED >
+<!ELEMENT legume (producteur,origine,qtity,note?,bio?)>
+<!ATTLIST legume type CDATA #REQUIRED prix CDATA #REQUIRED calibre CDATA #REQUIRED >
+<!ELEMENT producteur (#PCDATA)>
+<!ELEMENT origine (#PCDATA)>
+<!ATTLIST origine ragion CDATA #IMPLIED>
+<!ELEMENT qtity (#PCDATA)>
+<!ELEMENT note (#PCDATA)>
+<!ELEMENT bio EMPTY>

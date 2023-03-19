@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT liver (auteurs,sections+)>
+<!ATTLIST liver titre CDATA #REQUIRED>
+
+<!ELEMENT auteurs (auteur+)>
+<!ELEMENT auteur EMPTY>
+<!ATTLIST auteur nom CDATA #REQUIRED>
+<!ATTLIST auteur prenom CDATA #REQUIRED>
+<!ELEMENT sections (section+)>
+<!ELEMENT section (chapitre)>
+<!ATTLIST section titre CDATA #REQUIRED>
+
+<!ELEMENT chapitre (paragraphe+)>
+<!ATTLIST chapitre titre CDATA #REQUIRED>
+
+<!ELEMENT paragraphe (#PCDATA)>

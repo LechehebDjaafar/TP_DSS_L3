@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!ELEMENT catalogue (cinema,film)>
+<!ELEMENT cinema (nom,adresse,seance)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT adresse (ville,lieu)>
+<!ELEMENT ville (#PCDATA)>
+<!ELEMENT lieu (#PCDATA)>
+<!ELEMENT seance EMPTY>
+<!ATTLIST seance heure CDATA #REQUIRED
+ref_film CDATA #REQUIRED>
+<!ELEMENT film (titre,annee)>
+<!ATTLIST film film_id ID #REQUIRED>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT annee (#PCDATA)>

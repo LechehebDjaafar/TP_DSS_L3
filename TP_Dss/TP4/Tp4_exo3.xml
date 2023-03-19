@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE films SYSTEM "Tp4_exo3_dtd.dtd">
+<?xml-model href="Tp4_exo3_xsd.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<films>
+    <movie>
+        <title>Match Point</title>
+        <year>2005</year>
+        <country>USA</country>
+        <genre>Crime</genre>
+        <director id='14'>
+            <last_name>Allen</last_name>
+            <first_name>Woody</first_name>
+            <birth_date>1935</birth_date>
+        </director>
+        <actor id='15'>
+            <last_name>Jonathan</last_name>
+            <first_name>Rhys Meyers</first_name>
+            <birth_date>1977</birth_date>
+            <role>Chris Wilton</role>
+        </actor>
+        <actor id='16'>
+            <last_name>Scarlett</last_name>
+            <first_name>Johansson</first_name>
+            <birth_date>1984</birth_date>
+        </actor>
+    </movie>
+</films>
+
+<!-- 
+    1-Les titre des films ou joue Scarlett Johansson
+    -> //movie[actor/last_name='Scarlett' and actor/ first_name='Johansson']/title
+    2-Les roles joues par Michel Blanc
+    -> //actor[last_name='Michel' and  first_name='Blanc']/role
+    3-le premier acteur dans la distribution de chaque film
+    -> //actor[@id='1']/first_name | //actor[@id='1']/last_name
+    4-les realisateurs des films ou jouent a la fois Michel Blanc ET Thierry Lhermite
+    -> //movie[actor/last_name='Michel' and actor/ first_name='Blanc' and actor/last_name='Thierry' and actor/ first_name='Lhermite' ]/director
+    5-les titre des films ou le directeur joue aussi un role comme acteur
+    -> //movie[director/first_name = actor/first_name and director/last_name = actor/last_name] /director/first_name | //movie[director/first_name = actor/first_name and director/last_name = actor/last_name] /director/last_name
+
+ -->

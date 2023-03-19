@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE cv SYSTEM "tp_4_dtd.dtd">
+<cv>
+  <etatcivil>
+    <nom>Lecheheb</nom>
+    <prenom>Djaafar</prenom>
+    <age>20</age>
+    <lieu>Ouargla</lieu>
+  </etatcivil >
+  <formation>
+    <titre>Hello world</titre>
+    <date>2023</date>
+    <!-- <mention>text</mention> 
+  <description>text</description>  -->
+  </formation >
+  <experience>
+    <libelle>text</libelle>
+    <!-- <fonction>text</fonction> -->
+    <annee>text</annee>
+    <!-- <observation>text</observation> -->
+  </experience >
+
+</cv>

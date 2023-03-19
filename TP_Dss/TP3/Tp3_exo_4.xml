@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Tp3_exo_4_xsd.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<!DOCTYPE inscriptions SYSTEM "Tp3_exo_4_dtd.dtd">
+<inscriptions>
+  <ue code="123" niveau="L3">
+    <titre>djaafar</titre>
+    <resume>cdnkscds</resume>
+    <inscrit num="132" semestre="semestre 5" />
+  </ue>
+  <etudiant num="123">
+    <nom>djaafar</nom>
+    <adresse>ourgla</adresse>
+  </etudiant>
+</inscriptions>

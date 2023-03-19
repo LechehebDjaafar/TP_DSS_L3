@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- <!DOCTYPE bookstore SYSTEM "Tp2_exe2_dtd.dtd"> -->
+<!DOCTYPE bookstore [
+<!ELEMENT bookstore (book+)>
+<!ELEMENT book (title,author+,year,price)>
+<!ATTLIST book category CDATA #REQUIRED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST title lang (fr | en) #REQUIRED>
+
+]>
+<bookstore>
+  <book category='fiction' >
+    <title lang='en'>Une breve histoire du temps</title>
+    <author>Stephen Hawking</author>
+    <year>1988</year>
+    <price>55.00</price>
+  </book>
+  <book category='fiction' >
+    <title lang='fr'>Une breve histoire du temps</title>
+    <author>Stephen Hawking</author>
+    <year>1988</year>
+    <price>55.00</price>
+  </book>
+</bookstore>

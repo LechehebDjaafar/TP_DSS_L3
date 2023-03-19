@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="produits">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="fruit">
+                    <xs:complexType>
+                        <xs:sequence>
+                           <xs:group ref="elem"/>
+                           <xs:element name="note" type="xs:string"  />
+                           <xs:element name="bio" />
+                        </xs:sequence>
+                        <xs:attributeGroup ref="att"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="legume">
+                <xs:complexType>
+                    <xs:sequence>
+                       <xs:group ref="elem"/>
+                       <xs:element name="note" type="xs:string" minOccurs="0" maxOccurs="1" />
+                       <xs:element name="bio" minOccurs="0" maxOccurs="1"/>
+                    </xs:sequence>
+                    <xs:attributeGroup ref="att"/>
+                </xs:complexType>
+            </xs:element>
+            </xs:choice>
+        </xs:complexType>
+        
+    </xs:element>
+    <xs:group name="elem">
+        <xs:sequence>
+            <xs:element name="producteur" type="xs:string" />
+            <xs:element name="origine" >
+                <xs:complexType mixed="true">
+                    <xs:attribute name="ragion" type="xs:string" use="optional"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="qtity" type="xs:integer" />
+
+        </xs:sequence>
+    </xs:group>
+    <xs:attributeGroup name="att">
+        <xs:attribute name="type" type="xs:string" use="required"/>
+        <xs:attribute name="prix" type="xs:integer" use="required"/>
+        <xs:attribute name="calibre" type="xs:int" use="required"/>
+    </xs:attributeGroup>
+</xs:schema>

@@ -1,0 +1,5 @@
+<!ELEMENT table_personne (personne+)>
+<!ELEMENT personne (nom,phone,email)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>

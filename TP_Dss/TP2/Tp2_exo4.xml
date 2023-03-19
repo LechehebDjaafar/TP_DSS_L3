@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE textemath SYSTEM "Tp2_exo4_dtd.dtd">
+<?xml-model href="Tp2_exo4_xsd.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<textemath>
+  <formule>
+    <fraction>
+      <op1>
+        <formule>
+          <somme>
+            <op1>
+              <formule><puissance ><op1><valeur>X</valeur></op1></puissance></formule>
+            </op1>
+            <op2><formule><puissance ><op1><formule><racine><op1><valeur>5</valeur></op1></racine></formule></op1></puissance></formule></op2>
+          </somme>
+        </formule>
+      </op1>
+      <op2><formule><produit><op1><valeur>7</valeur></op1><op2><formule><racine><op1><valeur>3</valeur></op1></racine></formule></op2></produit></formule></op2>
+    </fraction>
+  </formule>
+</textemath>

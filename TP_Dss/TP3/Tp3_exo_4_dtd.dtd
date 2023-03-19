@@ -1,0 +1,13 @@
+<!ELEMENT inscriptions (ue+,etudiant*)>
+<!ELEMENT ue (titre,resume,inscrit*)>
+<!ATTLIST ue code CDATA #REQUIRED>
+<!ATTLIST ue niveau CDATA #REQUIRED>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT resume (#PCDATA)>
+<!ELEMENT inscrit EMPTY>
+<!ATTLIST inscrit num CDATA #REQUIRED>
+<!ATTLIST inscrit semestre CDATA #REQUIRED>
+<!ELEMENT etudiant (nom,adresse)>
+<!ATTLIST etudiant num CDATA #REQUIRED>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT adresse (#PCDATA)>

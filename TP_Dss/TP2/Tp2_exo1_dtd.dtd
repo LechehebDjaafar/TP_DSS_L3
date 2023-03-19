@@ -1,0 +1,7 @@
+<!ELEMENT messages (message+)>
+<!ELEMENT message (dest+,contenu)>
+<!ATTLIST message numero CDATA #REQUIRED>
+<!ATTLIST message dete CDATA #IMPLIED>
+<!ELEMENT dest (#PCDATA)>
+<!ELEMENT contenu (#PCDATA)>
+<!ATTLIST dest bcc CDATA #IMPLIED>

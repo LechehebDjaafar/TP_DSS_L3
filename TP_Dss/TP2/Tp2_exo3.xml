@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE calendrier SYSTEM "Tp2_exo3_dtd.dtd">
+<!-- <!DOCTYPE calendrier [
+<!ELEMENT calendrier (evenement+)>
+<!ELEMENT evenement (date, description, heure?, duree?)>
+<!ATTLIST evenement repetition (mois|annee|semain) #IMPLIED>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT heure (#PCDATA)>
+<!ELEMENT duree (#PCDATA)> -->
+<!-- <!ELEMENT repetition (type, borne?)> -->
+<!-- <!ELEMENT type (#PCDATA)> -->
+<!-- <!ELEMENT borne (date | occurrence)> -->
+<!-- <!ELEMENT occurrence (#PCDATA)> -->
+<!-- ]> -->
+<calendrier>
+<evenement repetition = "semain">
+  <date>2023-03-01</date>
+  <description>Meeting with client A</description>
+  <heure>14:00</heure>
+  <duree>2 hours</duree>
+</evenement>
+<evenement repetition = "mois">
+  <date>2023-03-03</date>
+  <description>Conference in Paris</description>
+  <heure>9:00</heure>
+  <duree>1 day</duree>
+</evenement>
+<evenement repetition = "annee">
+  <date>2023-03-05</date>
+  <description>Visit to grandparents</description>
+</evenement>
+</calendrier>

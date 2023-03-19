@@ -1,0 +1,15 @@
+<!-- DTD pour décrire un texte contenant des formules mathématiques -->
+<!ELEMENT textemath ((texte | formule)+) >
+<!ELEMENT texte (#PCDATA) >
+<!ELEMENT formule (valeur|somme|difference|produit|fraction|racine|puissance) >
+<!ELEMENT valeur (#PCDATA)>
+<!ELEMENT somme (op1, op2)>
+<!ELEMENT difference (op1, op2)>
+<!ELEMENT produit (op1, op2)>
+<!ELEMENT fraction (op1, op2)>
+<!ELEMENT racine (op1)>
+<!ATTLIST racine ordre CDATA #IMPLIED>
+<!ELEMENT puissance (op1)>
+<!ELEMENT op1 (valeur|formule)>
+<!ELEMENT op2 (valeur|formule)>
+<!-- <!ATTLIST puissance exposant CDATA #REQUIRED>-->

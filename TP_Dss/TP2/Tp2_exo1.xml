@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE messages SYSTEM  "Tp2_exe1_dtd.dtd"> -->
+<?xml-model href="Tp2_exo1_xsd.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<!DOCTYPE messages [
+<!ELEMENT messages (message+)>
+<!ELEMENT message (dest+,contenu)>
+<!ELEMENT dest (#PCDATA)>
+<!ELEMENT contenu (#PCDATA)>
+<!ATTLIST message numero CDATA #REQUIRED date CDATA #IMPLIED>
+<!ATTLIST dest bcc CDATA #IMPLIED>]> 
+<messages>
+  <message numero="1" date="2021-01-01">
+    <dest>promo2021</dest>
+    <dest bcc="oui">Pierre Nerzic</dest>
+    <contenu>Bonne année !</contenu>
+  </message>
+  <message numero="2">
+    <dest>promo2021</dest>
+    <contenu>Bonne rentrée !</contenu>
+  </message>
+</messages>

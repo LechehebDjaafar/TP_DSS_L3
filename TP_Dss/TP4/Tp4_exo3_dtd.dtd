@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT films (movie+)>
+<!ELEMENT movie (title,year,country,genre,director,actor+)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT director (last_name,first_name,birth_date)>
+<!ELEMENT actor (last_name,first_name,birth_date,role?)>
+<!ATTLIST director id CDATA #REQUIRED>
+<!ATTLIST actor id CDATA #REQUIRED>
+<!ELEMENT last_name (#PCDATA)>
+<!ELEMENT first_name (#PCDATA)>
+<!ELEMENT birth_date (#PCDATA)>
+<!ELEMENT role (#PCDATA)>

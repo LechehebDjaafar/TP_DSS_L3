@@ -1,0 +1,3 @@
+<!ELEMENT document (paragraphe+)>
+<!ATTLIST document type CDATA #REQUIRED>
+<!ELEMENT paragraphe (#PCDATA)>

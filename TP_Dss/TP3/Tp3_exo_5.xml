@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Tp3_exo_5_xsd.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<!DOCTYPE document SYSTEM "Tp3_exo_5_dtd.dtd">
+<document type="hh">
+  <paragraphe>djsskf</paragraphe>
+  <paragraphe>djsskf</paragraphe>
+  <paragraphe>djsskf</paragraphe>
+  <paragraphe>djsskf</paragraphe>
+  <paragraphe>djsskf</paragraphe>
+</document>

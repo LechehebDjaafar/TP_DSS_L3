@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="textemath" >
+    <xs:complexType>
+      <xs:choice>
+        <xs:element name="formule" type="formules" />
+        <xs:element name="text" type="xs:string" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="op_1">
+    <xs:sequence>
+    <xs:element name="op1">
+      <xs:complexType>
+        <xs:choice>
+          <xs:element name="valeur" type="xs:string"/>
+          <xs:element name="formule" type="formules"/>
+        </xs:choice>
+    </xs:complexType>
+    </xs:element></xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="op">
+    <xs:sequence>
+      <xs:element name="op1">
+        <xs:complexType>
+          <xs:choice>
+            <xs:element name="valeur" type="xs:string"/>
+            <xs:element name="formule" type="formules"/>
+          </xs:choice>
+      </xs:complexType>
+      </xs:element>
+      <xs:element name="op2">
+        <xs:complexType>
+          <xs:choice>
+            <xs:element name="valuer" type="xs:string"/>
+            <xs:element name="formule" type="formules"/>
+            
+          </xs:choice>
+          
+      </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="formules">
+    <xs:choice>
+      <xs:element name="somme" type="op"/>
+      <xs:element name="difference" type="op"/>
+      <xs:element name="produit" type="op"/>
+      <xs:element name="fraction" type="op"/>
+      <xs:element name="racine" type="op_1"/>
+      <xs:element name="puissance" type="op_1"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="formules_2">
+    <xs:choice>
+      <xs:element name="racine" type="op_1"/>
+      <xs:element name="puissance" type="op_1"/>
+    </xs:choice>
+  </xs:complexType>
+</xs:schema>
+
+<!-- <!ELEMENT formule (valeur|somme|difference|produit|fraction|racine|puissance) > -->

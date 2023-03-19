@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE table_personne SYSTEM "Tp2_exo6_dtd.dtd">
+<table_personne>
+  <personne>
+    <nom>alan</nom>
+    <phone>3127786</phone>
+    <email>alan@abc.com</email>
+  </personne>
+  <personne>
+    <nom>sara</nom>
+    <phone>2136877</phone>
+    <email>sara@xyz.edu</email>
+  </personne>
+  <personne>
+    <nom>fred</nom>
+    <phone>7786312</phone>
+    <email>fd@ac.uk</email>
+  </personne>
+</table_personne>

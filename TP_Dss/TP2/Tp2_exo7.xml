@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="Tp2_exo7_xsd.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<!DOCTYPE math SYSTEM "Tp2_exo7_dtd.dtd">
+<math> 
+  <mrow> 
+  <msup>
+    <mi>x</mi> 
+    <mn>2</mn> 
+  </msup> 
+  <mo>+</mo>
+  <mn>4</mn>
+  <mo>=</mo> 
+  <mn>0</mn> 
+  </mrow> 
+</math> 
+<!-- x^2 + 4 = 0 -->
+<!-- x = 2 -->

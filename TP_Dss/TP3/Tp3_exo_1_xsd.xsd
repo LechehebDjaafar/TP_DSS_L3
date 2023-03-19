@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="livre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name='titre' type = 'xs:string'/>
+        <xs:element name='auteur' type = 'AuteurType' minOccurs="1" maxOccurs="2"/>
+        <!-- <xs:complexType >
+          <xs:sequence>
+            <xs:element name="nom" type="xs:string"/>
+            <xs:element name="prenom" type="xs:string"></xs:element>
+          </xs:sequence>
+          <xs:attribute name="idAuteur" type="xs:string" use="required"></xs:attribute>
+        </xs:complexType> -->
+        <xs:choice>
+          <xs:element name='presentation' type = 'xs:string'/>
+          <xs:element name='resume' type = 'xs:string'/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name='isbn' type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="AuteurType">
+    <xs:sequence>
+      <xs:element name="nom" type="xs:string"/>
+      <xs:element name="prenom" type="xs:string"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="idAuteur" type="xs:string" use="required"></xs:attribute>
+  </xs:complexType>
+</xs:schema>

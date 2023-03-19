@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="liver">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="auteurs">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="auteur" maxOccurs="unbounded">
+                                <xs:complexType mixed="true">
+                                    <xs:attributeGroup ref="nom-prenom"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="sections">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="section" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="chapitre">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="paragraphe" type="xs:string" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                                <xs:attributeGroup ref="titres"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attributeGroup ref="titres"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attributeGroup ref="titres"/>
+        </xs:complexType>
+        
+    </xs:element>
+
+
+
+    <xs:attributeGroup name="titres">
+        <xs:attribute name="titre"  type="xs:string" use="required"/>
+    </xs:attributeGroup>
+    <xs:attributeGroup name="nom-prenom">
+        <xs:attribute name="nom"  type="xs:string" use="required"/>
+        <xs:attribute name="prenom"  type="xs:string" use="required"/>
+    </xs:attributeGroup>
+
+</xs:schema>
