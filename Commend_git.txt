@@ -1,0 +1,22 @@
+commend num 1:
+-git init
+commend nub 2:
+-git config --global user.name "your name"
+-git config --global user.email "your email"
+-git config --list
+Commend num 3:
+git status
+Commend num 4:
+git add "name file"
+Commend num 5:
+git commit -m "Message"
+Commend num 6:
+git log -->q
+Commend num 7:
+git branch "name user admin new"
+Commend num 8:
+git branch --> show users admin
+Commend num 9:
+git checkout "Hash for files"
+Commend num 10:
+git checkout -->chang user admin
