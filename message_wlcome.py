@@ -1,0 +1,1 @@
+print("Thinks for Magic")
