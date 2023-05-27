@@ -1,0 +1,10 @@
+<!ELEMENT enseignement (module+)>
+<!ELEMENT module (chapitres)>
+<!ELEMENT chapitres (chapitre+, enseignant+, etudiant+)>
+<!ELEMENT chapitre EMPTY>
+<!ELEMENT enseignant (nom)>
+<!ELEMENT etudiant (nom, note)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT note (#PCDATA)>
+<!ATTLIST chapitre intitule CDATA #REQUIRED>
+<!ATTLIST etudiant numero CDATA #IMPLIED>

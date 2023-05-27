@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE enseignement SYSTEM "examen_dss_2023_dtd.dtd">
+<?xml-model href="examan_dss_2023_xsd.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<enseignement>
+    <module>
+        <chapitres>
+            <chapitre intitule="Algebre relationnelle" />
+            <chapitre intitule="SQL" />
+            <chapitre intitule="Normalisation" />
+            <enseignant>
+                <nom>Enseignant 2 &amp; 4</nom>
+            </enseignant>
+            <enseignant>
+                <nom>Enseignant 3</nom>
+            </enseignant>
+            <etudiant numero="67">
+                <nom>Etudiant A</nom>
+                <note>14</note>
+            </etudiant>
+            <etudiant numero="78">
+                <nom>Etudiant B</nom>
+                <note>12</note>
+            </etudiant>
+        </chapitres>
+    </module>
+    <module>
+        <chapitres>
+            <chapitre intitule="XML" />
+            <enseignant>
+                <nom>Enseignant1</nom>
+            </enseignant>
+            <etudiant>
+                <nom>Etudiant C</nom>
+                <note>12</note>
+            </etudiant>
+        </chapitres>
+    </module>
+</enseignement>
