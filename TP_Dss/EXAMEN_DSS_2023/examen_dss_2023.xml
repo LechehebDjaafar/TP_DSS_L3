@@ -38,3 +38,12 @@
         </chapitres>
     </module>
 </enseignement>
+
+<!-- XPATH
+ //etudiant[not (@numero]/nom
+ Count(//enseignement [module= ‘BDD’]/chapitres/etudiant) 
+ //etudiant[note>=11 and note <=15]/nom 
+ //chapitres[chapitre[@intiutle=”XML”]]/enseignant/nom 
+ //etudiant[note <=10]/nom 
+ Count(//etudiant[note <=10]/nom) 
+-->
