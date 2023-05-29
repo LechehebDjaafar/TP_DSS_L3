@@ -3,6 +3,7 @@
 <?xml-model href="examan_dss_2023_xsd.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <enseignement>
     <module>
+    BDD
         <chapitres>
             <chapitre intitule="Algebre relationnelle" />
             <chapitre intitule="SQL" />
@@ -24,6 +25,7 @@
         </chapitres>
     </module>
     <module>
+        XML
         <chapitres>
             <chapitre intitule="XML" />
             <enseignant>

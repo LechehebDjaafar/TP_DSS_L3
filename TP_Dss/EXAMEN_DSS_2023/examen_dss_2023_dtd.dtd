@@ -1,5 +1,5 @@
 <!ELEMENT enseignement (module+)>
-<!ELEMENT module (chapitres)>
+<!ELEMENT module (#PCDATA|chapitres)*>
 <!ELEMENT chapitres (chapitre+, enseignant+, etudiant+)>
 <!ELEMENT chapitre EMPTY>
 <!ELEMENT enseignant (nom)>
